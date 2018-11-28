@@ -40,11 +40,12 @@ public class ConsumerSql {
                     .readStream()
                     .format("kafka")
                     .option("kafka.bootstrap.servers", "127.0.0.1:9092")
-                    .option("subscribe", "capstone")
-                    .option("startingOffsets", "earliest")
+                    .option("subscribe", "stream-topics")
+                    .option("startingOffsets", "latest")
                     .option("failOnDataLoss", "false")
                     //.option("kafkaConsumer.pollTimeoutMs","10")
                     .load();
+            final PartialCollector partialCollector = new PartialCollector();
             final Dataset<Row> ds3 = ds1
                     .select(from_json(col("value").cast("string"), schema).as("interaction"));
             ds3.printSchema();
@@ -65,11 +66,11 @@ public class ConsumerSql {
                             col("interactionType").equalTo("view"), 0
                     )
             ).as("totView");
-            final Column ratioAmount = clickCol.divide(viewCol).as("ratioAmount");
+            final Column ratioAmount = coalesce(clickCol.divide(viewCol),lit(0)).as("ratioAmount");
             final Column totRequestAmount = count(col("date")).as("totRequestsAmount");
-            final Column ratio = clickCol.divide(viewCol).gt(lit(3)).as("ratio");
+            final Column ratio = ratioAmount.gt(3).as("ratio");
             final Column totRequest = count(col("date")).gt(lit(1000)).as("totRequests");
-            final Column totCategoriesAmount = countDistinct("categoryId").as("totCategoriesAmount");
+            final Column totCategoriesAmount = partialCollector.apply(col("categoryId")).as("totCategoriesAmount");
             final Column totCategories = totCategoriesAmount.gt(lit(5)).as("totCategories");
             final Dataset<Row> bots = interaction.groupBy(window(col("date"), "10 minutes"), col("ip"))
                     .agg(ratio, totRequest, totCategories, totCategoriesAmount, ratioAmount, totRequestAmount)

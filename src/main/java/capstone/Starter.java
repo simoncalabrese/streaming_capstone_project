@@ -20,7 +20,7 @@ public class Starter {
         //crete producer
         final KafkaProducer<String, String> kafkaProducer = new KafkaProducer<>(properties);
         Files.readAllLines(Paths.get("BotGen/data.json")).forEach( r -> {
-            final ProducerRecord<String, String> record = new ProducerRecord<>("capstone", r);
+            final ProducerRecord<String, String> record = new ProducerRecord<>("stream-topics", r);
             kafkaProducer.send(record);
         });
 
