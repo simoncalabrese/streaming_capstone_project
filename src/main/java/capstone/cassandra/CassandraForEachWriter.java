@@ -5,9 +5,9 @@ import org.apache.spark.sql.Row;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class CassandraConnectorTest extends ForeachWriter<Row> {
+public class CassandraForEachWriter extends ForeachWriter<Row> {
     private static final long serialVersionUID = 6593255972516907576L;
-    private static final Logger LOGGER = LoggerFactory.getLogger(CassandraWriter.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(CassandraForEachWriter.class);
 
     private static final String IP = "ip";
     private static final String RATIO = "ratio";
@@ -26,6 +26,7 @@ public class CassandraConnectorTest extends ForeachWriter<Row> {
 
     @Override
     public boolean open(long partitionId, long version) {
+        LOGGER.debug("Opening partition " + partitionId +" with version " + version);
         return true;
     }
 
@@ -48,6 +49,6 @@ public class CassandraConnectorTest extends ForeachWriter<Row> {
 
     @Override
     public void close(Throwable errorOrNull) {
-
+        LOGGER.debug("Closing...");
     }
 }

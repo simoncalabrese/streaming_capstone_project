@@ -1,11 +1,9 @@
 package capstone;
 
 import capstone.bean.stream.Interaction;
-import capstone.cassandra.CassandraConnectorTest;
+import capstone.cassandra.CassandraForEachWriter;
 import org.apache.spark.SparkConf;
 import org.apache.spark.sql.*;
-import org.apache.spark.sql.expressions.Window;
-import org.apache.spark.sql.expressions.WindowSpec;
 import org.apache.spark.sql.streaming.OutputMode;
 import org.apache.spark.sql.streaming.StreamingQuery;
 import org.apache.spark.sql.types.DataTypes;
@@ -83,7 +81,7 @@ public class ConsumerSql {
             final StreamingQuery start = bots.coalesce(1)
                     .writeStream()
                     .outputMode(OutputMode.Complete())
-                    .foreach(new CassandraConnectorTest())
+                    .foreach(new CassandraForEachWriter())
                     .start();
             start.awaitTermination();
             return javaStreamingContext;
