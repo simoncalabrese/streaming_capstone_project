@@ -71,7 +71,7 @@ public class ConsumerSql {
             final Column ratio = ratioAmount.gt(3).as("ratio");
             final Column totRequest = count(col("date")).gt(lit(1000)).as("totRequests");
             final Column totCategoriesAmount = partialCollector.apply(col("categoryId")).as("totCategoriesAmount");
-            final Column totCategories = totCategoriesAmount.gt(lit(5)).as("totCategories");
+            final Column totCategories = totCategoriesAmount.gt(lit(20)).as("totCategories");
             final Dataset<Row> bots = interaction.groupBy(window(col("date"), "10 minutes"), col("ip"))
                     .agg(ratio, totRequest, totCategories, totCategoriesAmount, ratioAmount, totRequestAmount)
                     .filter(col("ip").isNotNull())

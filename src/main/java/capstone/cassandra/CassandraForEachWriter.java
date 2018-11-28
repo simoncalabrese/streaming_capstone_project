@@ -13,10 +13,7 @@ public class CassandraForEachWriter extends ForeachWriter<Row> {
     private static final String RATIO = "ratio";
     private static final String TOT_REQUESTS = "totRequests";
     private static final String TOT_CATEGORIES = "totCategories";
-    private static final String TOT_CATEGORIES_AMOUNT = "totCategoriesAmount";
-    private static final String RATIO_AMOUNT = "ratioAmount";
-    private static final String TOT_REQUESTS_AMOUNT = "totRequestsAmount";
-    //private static final String REGISTER_DATE = "register_date";
+    private static final String REGISTER_DATE = "register_date";
 
     private static final CassandraConnector client = new CassandraConnector();
 
@@ -26,7 +23,7 @@ public class CassandraForEachWriter extends ForeachWriter<Row> {
 
     @Override
     public boolean open(long partitionId, long version) {
-        LOGGER.debug("Opening partition " + partitionId +" with version " + version);
+        LOGGER.debug("Opening partition " + partitionId + " with version " + version);
         return true;
     }
 
@@ -36,13 +33,11 @@ public class CassandraForEachWriter extends ForeachWriter<Row> {
         final Boolean ratio = value.getAs(RATIO);
         final Boolean totRequests = value.getAs(TOT_REQUESTS);
         final Boolean totCategories = value.getAs(TOT_CATEGORIES);
-        final Long totCategoriesAmount = value.getAs(TOT_CATEGORIES_AMOUNT);
-        final Double ratioAmount = value.getAs(RATIO_AMOUNT);
-        final Long totRequestsAmount = value.getAs(TOT_REQUESTS_AMOUNT);
+        final Long registerDate = System.currentTimeMillis();
 
         String query = "INSERT INTO " +
-                "capstone.bots" + "(" + IP + "," + RATIO + "," + TOT_REQUESTS + "," + TOT_CATEGORIES + "," + TOT_CATEGORIES_AMOUNT + ", " + RATIO_AMOUNT + ", " + TOT_REQUESTS_AMOUNT + ") " +
-                "VALUES ('" + ip + "', " + ratio + ", " + totRequests + ", " + totCategories + ", " + totCategoriesAmount + ", " + ratioAmount + ", " +totRequestsAmount + ");";
+                "capstone.bots" + "(" + IP + "," + RATIO + "," + TOT_REQUESTS + "," + TOT_CATEGORIES + "," + REGISTER_DATE + ") " +
+                "VALUES ('" + ip + "', " + ratio + ", " + totRequests + ", " + totCategories + "," + registerDate + ");";
         LOGGER.info("Performing: " + query);
         client.getSession().execute(query);
     }
