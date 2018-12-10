@@ -17,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConsumerSql.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConsumerSql.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1734">
-              <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+            <state relative-caret-position="-2">
+              <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumerSqlTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConsumerSqlTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="58" column="63" lean-forward="false" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
+            <state relative-caret-position="277">
+              <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,8 +126,8 @@
         <option value="$PROJECT_DIR$/BotGen/test.json" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java" />
       </list>
     </option>
   </component>
@@ -284,7 +284,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConsumerSqlTest">
+  <component name="RunManager" selected="JUnit.ConsumerSqlTest.botForTotCategories">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -300,25 +300,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="capstone.ConsumerSql" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="capstone" />
-      <envs />
-    </configuration>
-    <configuration name="ConsumerSqlTEST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="capstone.cassandra.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="capstone.ConsumerSqlTEST" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -372,6 +353,26 @@
       <option name="MAIN_CLASS_NAME" value="ConsumerSqlTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ConsumerSqlTest.botForTotCategories" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="capstone" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ConsumerSqlTest" />
+      <option name="METHOD_NAME" value="botForTotCategories" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -465,18 +466,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ConsumerSql" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ConsumerSqlTEST" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Starter" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.noBot" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Starter" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.noBot" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.botForTotCategories" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.noBot" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Starter" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ConsumerSql" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ConsumerSqlTEST" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.botForTotCategories" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.noBot" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Starter" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ConsumerSql" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +512,7 @@
       <workItem from="1543392113115" duration="22790000" />
       <workItem from="1543919404422" duration="30000" />
       <workItem from="1543919542414" duration="5395000" />
-      <workItem from="1544433316105" duration="3339000" />
+      <workItem from="1544433316105" duration="3525000" />
     </task>
     <task id="LOCAL-00001" summary="Complete task. To test">
       <created>1543413975888</created>
@@ -534,7 +535,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543480395145</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix code for integration">
+      <created>1544441710401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544441710401</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -550,14 +558,14 @@
     <history-entry file="ConsumerSqlTest - 2018.12.10 at 10h 55m 12s.xml">
       <configuration name="ConsumerSqlTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 28m 56s.xml">
-      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    <history-entry file="ConsumerSqlTest - 2018.12.10 at 12h 36m 42s.xml">
+      <configuration name="ConsumerSqlTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 29m 25s.xml">
-      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    <history-entry file="ConsumerSqlTest_botForTotCategories - 2018.12.10 at 12h 37m 19s.xml">
+      <configuration name="ConsumerSqlTest.botForTotCategories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 30m 03s.xml">
-      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    <history-entry file="ConsumerSqlTest_botForTotCategories - 2018.12.10 at 12h 37m 56s.xml">
+      <configuration name="ConsumerSqlTest.botForTotCategories" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 31m 10s.xml">
       <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
@@ -570,7 +578,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113293000" />
+    <option name="totallyTimeSpent" value="113479000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -602,9 +610,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49284694" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.49284694" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.4914163" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.4914163" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20529328" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -627,7 +635,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete task. To test" />
     <MESSAGE value="add watermarking function for get delayed data of 10 seconds" />
-    <option name="LAST_COMMIT_MESSAGE" value="add watermarking function for get delayed data of 10 seconds" />
+    <MESSAGE value="fix code for integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix code for integration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1092,20 +1101,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="58" column="63" lean-forward="false" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
+        <state relative-caret-position="-2">
+          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1734">
-          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state relative-caret-position="277">
+          <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -56,7 +56,7 @@ public class ConsumerSqlTest {
                 new InteractionTest("2018-01-12 12:15:00", 1003L, "172.10.0.0", "click"),
                 new InteractionTest("2018-01-12 12:15:00", 1004L, "172.10.0.0", "click"),
                 new InteractionTest("2018-01-12 12:10:00", 1005L, "172.20.0.0", "view"),
-                new InteractionTest("2018-01-12 12:15:00", 1006L, "172.20.0.0", "click"));
+                new InteractionTest("2018-01-12 12:15:00", 1006L, "172.10.0.0", "click"));
         final Dataset<Row> bots = execute(interactions);
         final String ip = bots.select("ip").collectAsList().get(0).getString(0);
         Assert.assertEquals(ip,"172.10.0.0");
