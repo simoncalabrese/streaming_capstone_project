@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="882d3d8f-378d-43bf-839e-98a59b0aee7b" name="Default" comment="add watermarking function for get delayed data">
+    <list default="true" id="882d3d8f-378d-43bf-839e-98a59b0aee7b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/java/InteractionTest.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BotGen/data.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/capstone.iml" afterPath="$PROJECT_DIR$/capstone.iml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java" afterPath="$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java" />
+      <change beforePath="$PROJECT_DIR$/target/classes/capstone/ConsumerSql.class" afterPath="$PROJECT_DIR$/target/classes/capstone/ConsumerSql.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConsumerSql.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConsumerSql.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="74" column="83" lean-forward="false" selection-start-line="74" selection-start-column="83" selection-end-line="74" selection-end-column="83" />
+            <state relative-caret-position="805">
+              <caret line="99" column="31" lean-forward="false" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,79 +33,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PartialCollector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java">
+      <file leaf-file-name="ConsumerSqlTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1141#1142#0" expanded="true" />
-                <element signature="e#1182#1183#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-                <element signature="e#1261#1262#0" expanded="true" />
-                <element signature="e#1338#1339#0" expanded="true" />
-                <element signature="e#1374#1375#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CassandraForEachWriter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1798#1799#0" expanded="true" />
-                <element signature="e#1840#1841#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CassandraConnector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraConnector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-              <folding>
-                <element signature="e#503#504#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Starter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/capstone/Starter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="botgen.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BotGen/botgen.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1098">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create-single.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BotGen/create-single.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="49" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -133,6 +72,8 @@
       <find>toMap</find>
       <find>datatype</find>
       <find>172.10.1.198</find>
+      <find>apply</find>
+      <find>todate</find>
     </findStrings>
     <replaceStrings>
       <replace>streamingcontext</replace>
@@ -190,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java" />
       </list>
     </option>
   </component>
@@ -243,7 +185,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -256,35 +198,14 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="capstone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="capstone" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="capstone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="capstone" type="462c0819:PsiDirectoryNode" />
-              <item name="BotGen" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="WrappedArray&#9;null&#9;null&#10;Cassa&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/cassandra/CassandraWriter.java&#10;intera&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/bean/stream/Interaction.java&#10;part-00001-0f260b3e-9116-45cb-99d0-8bf333cba25a.json&#9;FILE&#9;file:///Users/simon/capstone/outout/singlefile.json/part-00001-0f260b3e-9116-45cb-99d0-8bf333cba25a.json" />
+    <property name="SearchEverywhereHistoryKey" value="Intera&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/bean/stream/Interaction.java&#10;consumer&#9;FILE&#9;file:///Users/simon/capstone/src/test/java/ConsumerSqlTest.java&#10;WrappedArray&#9;null&#9;null&#10;Cassa&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/cassandra/CassandraWriter.java&#10;intera&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/bean/stream/Interaction.java&#10;part-00001-0f260b3e-9116-45cb-99d0-8bf333cba25a.json&#9;FILE&#9;file:///Users/simon/capstone/outout/singlefile.json/part-00001-0f260b3e-9116-45cb-99d0-8bf333cba25a.json" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.45287356" />
@@ -312,32 +233,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Starter">
+  <component name="RunManager" selected="JUnit.ConsumerSqlTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="ConsumerDemoGroups" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="capstone.cassandra.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="capstone.ConsumerDemoGroups" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="capstone" />
-      <envs />
     </configuration>
     <configuration name="ConsumerSql" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -369,25 +271,6 @@
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="capstone" />
-      <envs />
-    </configuration>
-    <configuration name="ConsumerStreaming" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="capstone.cassandra.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="capstone.ConsumerStreaming" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="-h localhost" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
@@ -428,6 +311,46 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="ConsumerSqlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="capstone" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ConsumerSqlTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ConsumerSqlTest.noBot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="capstone" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ConsumerSqlTest" />
+      <option name="METHOD_NAME" value="noBot" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -490,19 +413,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.ConsumerStreaming" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ConsumerSql" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ConsumerDemoGroups" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ConsumerSqlTEST" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Starter" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ConsumerSql" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ConsumerSqlTEST" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Starter" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.noBot" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Starter" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ConsumerSql" />
-        <item index="2" class="java.lang.String" itemvalue="Application.ConsumerSqlTEST" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ConsumerDemoGroups" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ConsumerStreaming" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.noBot" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Starter" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ConsumerSql" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ConsumerSqlTEST" />
       </list>
     </recent_temporary>
   </component>
@@ -534,7 +457,10 @@
       <updated>1542892716740</updated>
       <workItem from="1542892720443" duration="39215000" />
       <workItem from="1543077525189" duration="42524000" />
-      <workItem from="1543392113115" duration="20923000" />
+      <workItem from="1543392113115" duration="22790000" />
+      <workItem from="1543919404422" duration="30000" />
+      <workItem from="1543919542414" duration="5395000" />
+      <workItem from="1544433316105" duration="2355000" />
     </task>
     <task id="LOCAL-00001" summary="Complete task. To test">
       <created>1543413975888</created>
@@ -550,11 +476,50 @@
       <option name="project" value="LOCAL" />
       <updated>1543417827268</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add watermarking function for get delayed data of 10 seconds">
+      <created>1543480395145</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543480395145</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ConsumerSqlTest - 2018.12.10 at 10h 28m 07s.xml">
+      <configuration name="ConsumerSqlTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest - 2018.12.10 at 10h 39m 03s.xml">
+      <configuration name="ConsumerSqlTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest - 2018.12.10 at 10h 44m 27s.xml">
+      <configuration name="ConsumerSqlTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest - 2018.12.10 at 10h 52m 22s.xml">
+      <configuration name="ConsumerSqlTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 28m 56s.xml">
+      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 29m 25s.xml">
+      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 30m 03s.xml">
+      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 31m 10s.xml">
+      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 31m 59s.xml">
+      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 32m 21s.xml">
+      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102662000" />
+    <option name="totallyTimeSpent" value="112309000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -567,6 +532,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.50858366" order="4" side_tool="true" content_ui="tabs" />
@@ -577,18 +543,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49284694" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.49284694" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.4914163" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20243205" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20529328" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -609,10 +575,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Complete task. To test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete task. To test" />
+    <MESSAGE value="add watermarking function for get delayed data of 10 seconds" />
+    <option name="LAST_COMMIT_MESSAGE" value="add watermarking function for get delayed data of 10 seconds" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
@@ -623,7 +604,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="125" />
+      <option name="time" value="129" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -688,6 +669,26 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>interaction.show();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sparkSession.createDataset(javacontext.parallelize(interactions).rdd(), Encoders.bean(InteractionTest.class)).show()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sparkSession.createDataset(javacontext.parallelize(interactions).rdd(), Encoders.bean(InteractionTest.class)).show();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>interaction.show()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>Arrays.stream(concats.split(&quot;,&quot;)).collect(Collectors.toSet())</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>java.util.stream.Collectors</custom-info>
@@ -715,128 +716,14 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>interactionsByIp
-                    .stream()
-                    .collect(Collectors.toMap(InteractionBean::getCategoryId,
-                            Function.identity(),
-                            (a,b) -&gt; a,
-                            HashMap::new))</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>grouppedByIp.entrySet()
-                            .stream()
-                            .map(set -&gt; Tuple4.apply(set.getKey(),
-                                    getRatio(set.getValue()),
-                                    getTotRequests(set.getValue()),
-                                    getTotCategories(set.getValue())))
-
-                            .filter(tuple -&gt; tuple._2() || tuple._3() || tuple._4())
-                            .map(Tuple4::_1)
-                            .forEach(IgniteDAO.this::addBot)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>grouppedByIp.entrySet()
-                            .stream()
-                            .map(set -&gt; Tuple4.apply(set.getKey(),
-                                    getRatio(set.getValue()),
-                                    getTotRequests(set.getValue()),
-                                    getTotCategories(set.getValue())))
-
-                            .filter(tuple -&gt; tuple._2() || tuple._3() || tuple._4())
-                            .map(e -&gt; e._1()).collect(Collectors.toList())</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>java.util.stream.Collectors</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>grouppedByIp.entrySet()
-                            .stream()
-                            .map(set -&gt; Tuple4.apply(set.getKey(),
-                                    getRatio(set.getValue()),
-                                    getTotRequests(set.getValue()),
-                                    getTotCategories(set.getValue())))
-
-                            .filter(tuple -&gt; tuple._2() || tuple._3() || tuple._4())
-                            .map(Tuple4::_1).collect(Collectors.toList())</expression-string>
-        <language-id>JAVA</language-id>
-        <custom-info>java.util.stream.Collectors</custom-info>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.6.0/ignite-core-2.6.0-sources.jar!/org/apache/ignite/configuration/CacheConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="1851" column="36" lean-forward="false" selection-start-line="1851" selection-start-column="36" selection-end-line="1851" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="3399" column="34" lean-forward="false" selection-start-line="3399" selection-start-column="34" selection-end-line="3399" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.6.0/ignite-core-2.6.0-sources.jar!/org/apache/ignite/IgniteCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="102" column="17" lean-forward="false" selection-start-line="102" selection-start-column="17" selection-end-line="102" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteStreamService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteService.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.6.0/ignite-core-2.6.0-sources.jar!/org/apache/ignite/cache/query/AbstractContinuousQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="73" column="41" lean-forward="false" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.6.0/ignite-core-2.6.0-sources.jar!/org/apache/ignite/cache/query/ContinuousQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="128" column="56" lean-forward="false" selection-start-line="128" selection-start-column="56" selection-end-line="128" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.6.0/ignite-core-2.6.0-sources.jar!/org/apache/ignite/cache/query/ScanQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="61" column="48" lean-forward="false" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="1049" column="31" lean-forward="false" selection-start-line="1049" selection-start-column="31" selection-end-line="1049" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/stream/Interaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSqlTEST.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.11/2.1.0/spark-streaming_2.11-2.1.0-sources.jar!/org/apache/spark/streaming/StreamingContext.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="826" column="0" lean-forward="false" selection-start-line="826" selection-start-column="0" selection-end-line="826" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="267" column="36" lean-forward="false" selection-start-line="267" selection-start-column="36" selection-end-line="267" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,13 +756,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteStarter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteStarter.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -891,18 +771,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/ignite/InteractionBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/ignite/InteractionBean.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="1314" column="23" lean-forward="false" selection-start-line="1314" selection-start-column="23" selection-end-line="1314" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -910,7 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="3783" column="33" lean-forward="false" selection-start-line="3783" selection-start-column="33" selection-end-line="3783" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,23 +797,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/ignite/BotBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="27" lean-forward="false" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/ignite/BotBean.java" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/util/zip/ZipFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="319" column="31" lean-forward="false" selection-start-line="319" selection-start-column="31" selection-end-line="319" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,7 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="852">
           <caret line="175" column="6" lean-forward="false" selection-start-line="175" selection-start-column="6" selection-end-line="175" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,47 +819,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="45" column="6" lean-forward="false" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="14" column="48" lean-forward="false" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteWriter.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/Dataset.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="482">
           <caret line="1406" column="6" lean-forward="false" selection-start-line="1406" selection-start-column="6" selection-end-line="1406" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteDAO.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraWriter.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/collection/SeqLike.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1591">
           <caret line="341" column="35" lean-forward="false" selection-start-line="341" selection-start-column="35" selection-end-line="341" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,15 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="33" column="59" lean-forward="false" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/functions.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="354" column="45" lean-forward="false" selection-start-line="354" selection-start-column="45" selection-end-line="354" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1029,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="100" column="26" lean-forward="false" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1037,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="128" column="6" lean-forward="false" selection-start-line="128" selection-start-column="6" selection-end-line="128" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="340" column="15" lean-forward="false" selection-start-line="340" selection-start-column="15" selection-end-line="340" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1061,24 +885,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="392" column="25" lean-forward="false" selection-start-line="392" selection-start-column="25" selection-end-line="392" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BotGen/create-single.sh">
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotGen/botgen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1098">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="885">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="false" />
+            <element signature="e#1182#1183#0" expanded="false" />
+            <element signature="e#1234#1235#0" expanded="false" />
+            <element signature="e#1261#1262#0" expanded="false" />
+            <element signature="e#1338#1339#0" expanded="false" />
+            <element signature="e#1374#1375#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotGen/test.json" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding>
+            <element signature="e#503#504#0" expanded="false" />
+            <element signature="e#538#539#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1798#1799#0" expanded="false" />
+            <element signature="e#1840#1841#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1091,73 +937,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1182#1183#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1261#1262#0" expanded="true" />
-            <element signature="e#1338#1339#0" expanded="true" />
-            <element signature="e#1374#1375#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotGen/test.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="101" lean-forward="false" selection-start-line="5" selection-start-column="101" selection-end-line="5" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding>
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1798#1799#0" expanded="true" />
-            <element signature="e#1840#1841#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BotGen/data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="3782" column="33" lean-forward="true" selection-start-line="3782" selection-start-column="33" selection-end-line="3782" selection-end-column="33" />
+        <state relative-caret-position="285">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotGen/create-single.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotGen/botgen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/stream/Interaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/collection/immutable/List.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="85" lean-forward="true" selection-start-line="44" selection-start-column="85" selection-end-line="44" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8-sources.jar!/scala/collection/TraversableOnce.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="307" column="6" lean-forward="false" selection-start-line="307" selection-start-column="6" selection-end-line="307" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8-sources.jar!/scala/collection/immutable/List.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="456" column="49" lean-forward="true" selection-start-line="456" selection-start-column="49" selection-end-line="456" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/SparkSession.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="538" column="19" lean-forward="false" selection-start-line="538" selection-start-column="19" selection-end-line="538" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/InteractionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="30" lean-forward="false" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#792#793#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#874#875#0" expanded="false" />
+            <element signature="e#918#919#0" expanded="false" />
+            <element signature="e#954#955#0" expanded="false" />
+            <element signature="e#982#983#0" expanded="false" />
+            <element signature="e#1044#1045#0" expanded="false" />
+            <element signature="e#1098#1099#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/functions.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39555">
+          <caret line="2668" column="13" lean-forward="false" selection-start-line="2668" selection-start-column="6" selection-end-line="2668" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/Column.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="442" column="39" lean-forward="false" selection-start-line="442" selection-start-column="36" selection-end-line="442" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-1/junit-4.13-beta-1.jar!/org/junit/Test.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="74" column="83" lean-forward="false" selection-start-line="74" selection-start-column="83" selection-end-line="74" selection-end-column="83" />
+        <state relative-caret-position="805">
+          <caret line="99" column="31" lean-forward="false" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.13-beta-1/junit-4.13-beta-1.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="72" column="23" lean-forward="false" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="46" column="42" lean-forward="false" selection-start-line="46" selection-start-column="42" selection-end-line="46" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

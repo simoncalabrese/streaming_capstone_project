@@ -23,7 +23,7 @@ public class ConsumerSql {
             new StructField("ip", DataTypes.StringType, true, Metadata.empty()),
             new StructField("interactionType", DataTypes.StringType, true, Metadata.empty())
     };
-    private final static StructType schema = new StructType(interactionFields);
+    public final static StructType schema = new StructType(interactionFields);
 
     public static void main(String[] args) throws InterruptedException {
         SparkConf conf = new SparkConf()
@@ -45,7 +45,6 @@ public class ConsumerSql {
                     .option("failOnDataLoss", "false")
                     //.option("kafkaConsumer.pollTimeoutMs","10")
                     .load();
-            final PartialCollector partialCollector = new PartialCollector();
             final Dataset<Row> ds3 = ds1
                     .select(from_json(col("value").cast("string"), schema).as("interaction"));
             ds3.printSchema();
@@ -55,30 +54,7 @@ public class ConsumerSql {
                     col("interaction.ip").as(Encoders.STRING()),
                     col("interaction.interactionType").as(Encoders.STRING())
             ).as(Encoders.bean(Interaction.class));
-            interaction.printSchema();
-            final Column clickCol = count(
-                    when(
-                            col("interactionType").equalTo("click"), 0
-                    )
-            ).as("totClick");
-            final Column viewCol = count(
-                    when(
-                            col("interactionType").equalTo("view"), 0
-                    )
-            ).as("totView");
-            final Column ratioAmount = coalesce(clickCol.divide(viewCol), lit(0)).as("ratioAmount");
-            final Column totRequestAmount = count(col("date")).as("totRequestsAmount");
-            final Column ratio = ratioAmount.gt(3).as("ratio");
-            final Column totRequest = count(col("date")).gt(lit(1000)).as("totRequests");
-            final Column totCategoriesAmount = partialCollector.apply(col("categoryId")).as("totCategoriesAmount");
-            final Column totCategories = totCategoriesAmount.gt(lit(20)).as("totCategories");
-            final Dataset<Row> bots = interaction.withWatermark("date", "10 seconds").groupBy(window(col("date"), "10 minutes"), col("ip"))
-                    .agg(ratio, totRequest, totCategories, totCategoriesAmount, ratioAmount, totRequestAmount)
-                    .filter(col("ip").isNotNull())
-                    .where(col("ratio").equalTo(true)
-                            .or(col("totRequests").equalTo(true)
-                                    .or(col("totCategories").equalTo(true))));
-            bots.printSchema();
+            final Dataset<Row> bots = detect(interaction);
             final StreamingQuery start = bots.coalesce(1)
                     .writeStream()
                     .outputMode(OutputMode.Complete())
@@ -90,6 +66,64 @@ public class ConsumerSql {
 
         ssc.start();
         ssc.awaitTermination();
+    }
+
+    private static Dataset<Row> detect(final Dataset<Interaction> interaction) {
+        final PartialCollector partialCollector = new PartialCollector();
+        interaction.printSchema();
+        final Column clickCol = count(
+                when(
+                        col("interactionType").equalTo("click"), 0
+                )
+        ).as("totClick");
+        final Column viewCol = count(
+                when(
+                        col("interactionType").equalTo("view"), 0
+                )
+        ).as("totView");
+        final Column ratioAmount = coalesce(clickCol.divide(viewCol), lit(0)).as("ratioAmount");
+        final Column totRequestAmount = count(col("date")).as("totRequestsAmount");
+        final Column ratio = ratioAmount.gt(3).as("ratio");
+        final Column totRequest = count(col("date")).gt(lit(1000)).as("totRequests");
+        final Column totCategoriesAmount = partialCollector.apply(col("categoryId")).as("totCategoriesAmount");
+        final Column totCategories = totCategoriesAmount.gt(lit(20)).as("totCategories");
+        final Dataset<Row> bots = interaction.withWatermark("date", "10 seconds").groupBy(window(col("date"), "10 minutes"), col("ip"))
+                .agg(ratio, totRequest, totCategories, totCategoriesAmount, ratioAmount, totRequestAmount)
+                .filter(col("ip").isNotNull())
+                .where(col("ratio").equalTo(true)
+                        .or(col("totRequests").equalTo(true)
+                                .or(col("totCategories").equalTo(true))));
+        bots.printSchema();
+        return bots;
+    }
+
+    public static Dataset<Row> analyze(final Dataset<Interaction> interaction) {
+        final PartialCollector partialCollector = new PartialCollector();
+        interaction.printSchema();
+        final Column clickCol = count(
+                when(
+                        col("interactionType").equalTo("click"), 0
+                )
+        ).as("totClick");
+        final Column viewCol = count(
+                when(
+                        col("interactionType").equalTo("view"), 0
+                )
+        ).as("totView");
+        final Column ratioAmount = coalesce(clickCol.divide(viewCol), lit(0)).as("ratioAmount");
+        final Column totRequestAmount = count(col("date")).as("totRequestsAmount");
+        final Column ratio = ratioAmount.gt(3).as("ratio");
+        final Column totRequest = count(col("date")).gt(lit(1000)).as("totRequests");
+        final Column totCategoriesAmount = partialCollector.apply(col("categoryId")).as("totCategoriesAmount");
+        final Column totCategories = totCategoriesAmount.geq(lit(5)).as("totCategories");
+        final Dataset<Row> bots = interaction.groupBy(/*col("date"),*/ col("ip"))
+                .agg(ratio, totRequest, totCategories, totCategoriesAmount, ratioAmount, totRequestAmount)
+                .filter(col("ip").isNotNull())
+                .where(col("ratio").equalTo(true)
+                        .or(col("totRequests").equalTo(true)
+                                .or(col("totCategories").equalTo(true))));
+        bots.printSchema();
+        return bots;
     }
 
 
