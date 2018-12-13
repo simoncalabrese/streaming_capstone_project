@@ -1,10 +1,7 @@
-capstone/bean/ignite/InteractionBean.class
 capstone/bean/stream/Interaction.class
-capstone/ConsumerSql.class
-capstone/ignite/IgniteStarter.class
-capstone/ignite/IgniteDAO.class
 capstone/cassandra/CassandraConnector.class
-capstone/cassandra/CassandraWriter.class
+capstone/cassandra/CassandraForEachWriter.class
 capstone/Starter.class
-capstone/ignite/IgniteDAO$IgniteDAOJob.class
-capstone/ignite/IgniteWriter.class
+capstone/PartialCollector.class
+capstone/ConsumerSql.class
+capstone/bean/stream/BotBean.class

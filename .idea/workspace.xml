@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="882d3d8f-378d-43bf-839e-98a59b0aee7b" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/capstone/bean/stream/BotBean.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/BotGen/botgen.py" afterPath="$PROJECT_DIR$/BotGen/botgen.py" />
+      <change beforePath="$PROJECT_DIR$/BotGen/create-single.sh" afterPath="$PROJECT_DIR$/BotGen/create-single.sh" />
+      <change beforePath="$PROJECT_DIR$/BotGen/data.json" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java" afterPath="$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java" afterPath="$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/capstone/Starter.java" afterPath="$PROJECT_DIR$/src/main/java/capstone/Starter.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java" afterPath="$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java" afterPath="$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java" />
+      <change beforePath="$PROJECT_DIR$/target/capstone-0.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/capstone/ConsumerSql.class" afterPath="$PROJECT_DIR$/target/classes/capstone/ConsumerSql.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/capstone/PartialCollector.class" afterPath="$PROJECT_DIR$/target/classes/capstone/PartialCollector.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/capstone/Starter.class" afterPath="$PROJECT_DIR$/target/classes/capstone/Starter.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/capstone/cassandra/CassandraForEachWriter.class" afterPath="$PROJECT_DIR$/target/classes/capstone/cassandra/CassandraForEachWriter.class" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ConsumerSqlTest.class" afterPath="$PROJECT_DIR$/target/test-classes/ConsumerSqlTest.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConsumerSql.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConsumerSql.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+            <state relative-caret-position="88">
+              <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,14 +46,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConsumerSqlTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BigDecimal.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="1589" column="58" lean-forward="false" selection-start-line="1589" selection-start-column="53" selection-end-line="1589" selection-end-column="58" />
+              <folding>
+                <element signature="e#67889#67890#0" expanded="true" />
+                <element signature="e#67953#67954#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Interaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/stream/Interaction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsumerSqlTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="560">
+              <caret line="102" column="47" lean-forward="false" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -90,18 +128,15 @@
         <option value="$PROJECT_DIR$/src/main/java/capstone/Consumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/KafkaConsoleConsumer.java" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/ConsumerStreaming.java" />
-        <option value="$PROJECT_DIR$/BotGen/botgen.py" />
         <option value="$PROJECT_DIR$/BotGen/create.sh" />
         <option value="$PROJECT_DIR$/BotGen/data1.json" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/ConsumerDemoGroups.java" />
-        <option value="$PROJECT_DIR$/BotGen/data.json" />
         <option value="$PROJECT_DIR$/outout/single.json/part-00000-cacad27a-6241-4775-bc41-d6580f4f2029.json" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/bean/Interaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/ignite/ExampleNodeStartup.java" />
         <option value="$PROJECT_DIR$/config/redis/example-redis.xml" />
         <option value="$PROJECT_DIR$/BotGen/worker.properties" />
         <option value="$PROJECT_DIR$/BotGen/file-stream-demo-standalone.properties" />
-        <option value="$PROJECT_DIR$/BotGen/create-single.sh" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/ConsumerSqlTEST.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/CassandraWriter.java" />
@@ -121,13 +156,18 @@
         <option value="$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraConnectorTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java" />
-        <option value="$PROJECT_DIR$/src/main/java/capstone/Starter.java" />
         <option value="$PROJECT_DIR$/BotGen/test.json" />
-        <option value="$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java" />
+        <option value="$PROJECT_DIR$/src/main/java/capstone/bean/stream/InteractionTest.java" />
+        <option value="$PROJECT_DIR$/BotGen/data.json" />
+        <option value="$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java" />
+        <option value="$PROJECT_DIR$/BotGen/create-single.sh" />
+        <option value="$PROJECT_DIR$/BotGen/botgen.py" />
+        <option value="$PROJECT_DIR$/src/main/java/capstone/bean/stream/BotBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/capstone/Starter.java" />
         <option value="$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java" />
       </list>
     </option>
   </component>
@@ -144,9 +184,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="864" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="714" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -205,6 +245,11 @@
             <path>
               <item name="capstone" type="b2602c69:ProjectViewProjectNode" />
               <item name="capstone" type="462c0819:PsiDirectoryNode" />
+              <item name="BotGen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="capstone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="capstone" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -227,6 +272,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="capstone" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="capstone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="capstone" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="capstone" type="462c0819:PsiDirectoryNode" />
+              <item name="stream" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="capstone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="capstone" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="capstone" type="462c0819:PsiDirectoryNode" />
+              <item name="cassandra" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="capstone" type="b2602c69:ProjectViewProjectNode" />
@@ -256,13 +319,15 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="Intera&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/bean/stream/Interaction.java&#10;consumer&#9;FILE&#9;file:///Users/simon/capstone/src/test/java/ConsumerSqlTest.java&#10;WrappedArray&#9;null&#9;null&#10;Cassa&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/cassandra/CassandraWriter.java&#10;intera&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/bean/stream/Interaction.java&#10;part-00001-0f260b3e-9116-45cb-99d0-8bf333cba25a.json&#9;FILE&#9;file:///Users/simon/capstone/outout/singlefile.json/part-00001-0f260b3e-9116-45cb-99d0-8bf333cba25a.json" />
+    <property name="SearchEverywhereHistoryKey" value="Intera&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/bean/stream/Interaction.java&#10;cons&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/ConsumerSql.java&#10;intera&#9;PSI&#9;JAVA://capstone.bean.stream.Interaction&#10;consumer&#9;FILE&#9;file:///Users/simon/capstone/src/test/java/ConsumerSqlTest.java&#10;WrappedArray&#9;null&#9;null&#10;Cassa&#9;FILE&#9;file:///Users/simon/capstone/src/main/java/capstone/cassandra/CassandraWriter.java&#10;part-00001-0f260b3e-9116-45cb-99d0-8bf333cba25a.json&#9;FILE&#9;file:///Users/simon/capstone/outout/singlefile.json/part-00001-0f260b3e-9116-45cb-99d0-8bf333cba25a.json" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.45287356" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="capstone.bean.stream" />
       <recent name="capstone.ignite" />
       <recent name="capstone" />
     </key>
@@ -284,7 +349,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConsumerSqlTest.botForTotCategories">
+  <component name="RunManager" selected="JUnit.ConsumerSqlTest.botForEventRateMoreThan1000">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -344,15 +409,26 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="ConsumerSqlTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="create-single.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="" />
+      <option name="USE_PROJECT_INTERPRETER" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BotGen" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BotGen/create-single.sh" />
+      <option name="PARAMETERS" value="" />
+      <module name="capstone" />
+      <envs />
+    </configuration>
+    <configuration name="ConsumerSqlTest.botForEventRateMoreThan1000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="capstone" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ConsumerSqlTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="botForEventRateMoreThan1000" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -372,26 +448,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ConsumerSqlTest" />
       <option name="METHOD_NAME" value="botForTotCategories" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ConsumerSqlTest.noBot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="capstone" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ConsumerSqlTest" />
-      <option name="METHOD_NAME" value="noBot" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -467,17 +523,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ConsumerSql" />
       <item index="1" class="java.lang.String" itemvalue="Application.Starter" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.noBot" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.botForTotCategories" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.botForTotCategories" />
+      <item index="3" class="java.lang.String" itemvalue="Bash.create-single.sh" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.botForEventRateMoreThan1000" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.botForTotCategories" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.noBot" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Starter" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ConsumerSql" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.botForEventRateMoreThan1000" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ConsumerSql" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Starter" />
+        <item index="3" class="java.lang.String" itemvalue="Bash.create-single.sh" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ConsumerSqlTest.botForTotCategories" />
       </list>
     </recent_temporary>
   </component>
@@ -512,7 +568,7 @@
       <workItem from="1543392113115" duration="22790000" />
       <workItem from="1543919404422" duration="30000" />
       <workItem from="1543919542414" duration="5395000" />
-      <workItem from="1544433316105" duration="3525000" />
+      <workItem from="1544433316105" duration="21984000" />
     </task>
     <task id="LOCAL-00001" summary="Complete task. To test">
       <created>1543413975888</created>
@@ -542,16 +598,17 @@
       <option name="project" value="LOCAL" />
       <updated>1544441710401</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix unit test values">
+      <created>1544441900934</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544441900934</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ConsumerSqlTest - 2018.12.10 at 10h 39m 03s.xml">
-      <configuration name="ConsumerSqlTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConsumerSqlTest - 2018.12.10 at 10h 44m 27s.xml">
-      <configuration name="ConsumerSqlTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ConsumerSqlTest - 2018.12.10 at 10h 52m 22s.xml">
       <configuration name="ConsumerSqlTest" configurationId="JUnit" />
     </history-entry>
@@ -561,24 +618,30 @@
     <history-entry file="ConsumerSqlTest - 2018.12.10 at 12h 36m 42s.xml">
       <configuration name="ConsumerSqlTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ConsumerSqlTest_botForEventRateMoreThan1000 - 2018.12.13 at 18h 59m 51s.xml">
+      <configuration name="ConsumerSqlTest.botForEventRateMoreThan1000" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest_botForEventRateMoreThan1000 - 2018.12.13 at 19h 01m 09s.xml">
+      <configuration name="ConsumerSqlTest.botForEventRateMoreThan1000" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest_botForEventRateMoreThan1000 - 2018.12.13 at 19h 02m 24s.xml">
+      <configuration name="ConsumerSqlTest.botForEventRateMoreThan1000" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ConsumerSqlTest_botForEventRateMoreThan1000 - 2018.12.13 at 19h 02m 40s.xml">
+      <configuration name="ConsumerSqlTest.botForEventRateMoreThan1000" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ConsumerSqlTest_botForTotCategories - 2018.12.10 at 12h 37m 19s.xml">
       <configuration name="ConsumerSqlTest.botForTotCategories" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ConsumerSqlTest_botForTotCategories - 2018.12.10 at 12h 37m 56s.xml">
       <configuration name="ConsumerSqlTest.botForTotCategories" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 31m 10s.xml">
-      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 31m 59s.xml">
-      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConsumerSqlTest_noBot - 2018.12.10 at 10h 32m 21s.xml">
-      <configuration name="ConsumerSqlTest.noBot" configurationId="JUnit" />
+    <history-entry file="ConsumerSqlTest_botForTotCategories - 2018.12.11 at 12h 45m 17s.xml">
+      <configuration name="ConsumerSqlTest.botForTotCategories" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113479000" />
+    <option name="totallyTimeSpent" value="131938000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -590,7 +653,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -602,7 +665,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.49713877" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -610,11 +673,12 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.49284694" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49284694" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.4914163" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20529328" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -623,7 +687,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,16 +699,23 @@
     <MESSAGE value="Complete task. To test" />
     <MESSAGE value="add watermarking function for get delayed data of 10 seconds" />
     <MESSAGE value="fix code for integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix code for integration" />
+    <MESSAGE value="fix unit test values" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix unit test values" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java</url>
-          <line>71</line>
+          <url>file://$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java</url>
+          <line>76</line>
           <properties />
-          <option name="timeStamp" value="125" />
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java</url>
+          <line>134</line>
+          <properties />
+          <option name="timeStamp" value="155" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -658,7 +728,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="129" />
+      <option name="time" value="156" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -723,116 +793,69 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>interaction.show();</expression-string>
+        <expression-string>new BigDecimal(click)
+                    .divide(new BigDecimal(view))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>sparkSession.createDataset(javacontext.parallelize(interactions).rdd(), Encoders.bean(InteractionTest.class)).show()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>sparkSession.createDataset(javacontext.parallelize(interactions).rdd(), Encoders.bean(InteractionTest.class)).show();</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>interaction.show()</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Arrays.stream(concats.split(&quot;,&quot;)).collect(Collectors.toSet())</expression-string>
+        <expression-string>interactionList.stream().map(Interaction::getInteractionType).collect(Collectors.toList())</expression-string>
         <language-id>JAVA</language-id>
         <custom-info>java.util.stream.Collectors</custom-info>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>concats.split(&quot;,&quot;)</expression-string>
+        <expression-string>interactionList.stream().map(Interaction::getInteractionType)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>&quot;INSERT INTO &quot; +
-                &quot;capstone.bots&quot; + &quot;(&quot; + IP + &quot;,&quot; + RATIO + &quot;,&quot; + TOT_REQUESTS + &quot;,&quot; + TOT_CATEGORIES + &quot;) &quot; +
-                &quot;VALUES ('&quot; + ip + &quot;', &quot; + ratio + &quot;', &quot; + totRequests + &quot;', &quot; + totCategories+ &quot;);&quot;</expression-string>
+        <expression-string>Files.lines(Paths.get(&quot;BotGen/data.json&quot;)).map(row -&gt; {
+            final String json = row.substring(0, row.length() - 1);
+            return gson.fromJson(json, InteractionTest.class);
+        }).collect(Collectors.groupingBy(InteractionTest::getIp)).entrySet().stream().limit(10).forEach(System.out::println)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>interactionsByIp                     .stream()                     .collect(Collectors.toMap(InteractionBean::getIp,                             Function.identity(),                             (a,b) -&gt; a,                             HashMap::new))</expression-string>
+        <expression-string>Files.lines(Paths.get(&quot;BotGen/data.json&quot;)).map(row -&gt; {
+            final String json = row.substring(0, row.length() - 1);
+            return gson.fromJson(json, InteractionTest.class);
+        }).collect(Collectors.joining())</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.util.stream.Collectors</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Files.lines(Paths.get(&quot;BotGen/data.json&quot;)).map(row -&gt; {
+            final String json = row.substring(0, row.length() - 1);
+            return gson.fromJson(json, InteractionTest.class);
+        }).collect(Collectors.toList())</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.util.stream.Collectors</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Files.lines(Paths.get(&quot;BotGen/data.json&quot;)).map(row -&gt; {
+            final String json = row.substring(0, row.length() - 1);
+            return gson.fromJson(json, InteractionTest.class);
+        })</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>interactionsByIp.stream().collect()</expression-string>
+        <expression-string>gson.fromJson(json, InteractionTest.class)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>interaction.show();</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSqlTEST.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.11/2.1.0/spark-streaming_2.11-2.1.0-sources.jar!/org/apache/spark/streaming/StreamingContext.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="826" column="0" lean-forward="false" selection-start-line="826" selection-start-column="0" selection-end-line="826" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="84" column="8" lean-forward="false" selection-start-line="84" selection-start-column="8" selection-end-line="88" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.6.0/ignite-core-2.6.0-sources.jar!/org/apache/ignite/Ignite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="267" column="36" lean-forward="false" selection-start-line="267" selection-start-column="36" selection-end-line="267" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/example-ignite.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/example-default.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="67" column="52" lean-forward="true" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteStarter.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/ignite/ignite-core/2.6.0/ignite-core-2.6.0-sources.jar!/org/apache/ignite/cache/query/SqlQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="206" column="26" lean-forward="false" selection-start-line="206" selection-start-column="26" selection-end-line="206" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/ignite/InteractionBean.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/util/stream/Collectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="1314" column="23" lean-forward="false" selection-start-line="1314" selection-start-column="23" selection-end-line="1314" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/nio/file/Files.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -844,13 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotGen/create.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -877,13 +893,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteWriter.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/Dataset.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="1406" column="6" lean-forward="false" selection-start-line="1406" selection-start-column="6" selection-end-line="1406" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ignite/IgniteDAO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraWriter.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/collection/SeqLike.class">
@@ -942,22 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1141#1142#0" expanded="false" />
-            <element signature="e#1182#1183#0" expanded="false" />
-            <element signature="e#1234#1235#0" expanded="false" />
-            <element signature="e#1261#1262#0" expanded="false" />
-            <element signature="e#1338#1339#0" expanded="false" />
-            <element signature="e#1374#1375#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BotGen/test.json" />
     <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraConnector.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -971,58 +964,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1798#1799#0" expanded="false" />
-            <element signature="e#1840#1841#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/Starter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="93" lean-forward="false" selection-start-line="22" selection-start-column="93" selection-end-line="22" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotGen/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotGen/create-single.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BotGen/botgen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/stream/Interaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/collection/immutable/List.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -1048,6 +989,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="538" column="19" lean-forward="false" selection-start-line="538" selection-start-column="19" selection-end-line="538" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1101,20 +1043,210 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/RelationalGroupedDataset.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="103" column="21" lean-forward="true" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        <state relative-caret-position="186">
+          <caret line="221" column="30" lean-forward="false" selection-start-line="221" selection-start-column="30" selection-end-line="221" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotGen/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="60299" column="94" lean-forward="false" selection-start-line="60299" selection-start-column="94" selection-end-line="60299" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotGen/create.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="80" lean-forward="false" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotGen/create-single.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="70" lean-forward="true" selection-start-line="2" selection-start-column="70" selection-end-line="2" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BotGen/botgen.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="83" column="27" lean-forward="true" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/PartialCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/stream/InteractionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.jar!/org/apache/spark/rdd/RDD.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="50" column="6" lean-forward="false" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/Starter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.jar!/org/apache/spark/api/java/function/Function.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar!/scala/Function.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/Dataset.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="1471" column="6" lean-forward="false" selection-start-line="1471" selection-start-column="6" selection-end-line="1471" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/stream/BotBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="44" column="33" lean-forward="false" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#907#908#0" expanded="true" />
+            <element signature="e#932#933#0" expanded="true" />
+            <element signature="e#968#969#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1057#1058#0" expanded="true" />
+            <element signature="e#1100#1101#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+            <element signature="e#1207#1208#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1494#1495#0" expanded="true" />
+            <element signature="e#1532#1533#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="e#1620#1621#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+            <element signature="e#1746#1747#0" expanded="true" />
+            <element signature="e#1808#1809#0" expanded="true" />
+            <element signature="e#1864#1865#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1950#1951#0" expanded="true" />
+            <element signature="e#2018#2019#0" expanded="true" />
+            <element signature="e#2080#2081#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.1.0/spark-core_2.11-2.1.0.jar!/org/apache/spark/scheduler/Task.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/execution/streaming/ForeachSink.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="56" column="12" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-sql_2.11/2.1.0/spark-sql_2.11-2.1.0-sources.jar!/org/apache/spark/sql/KeyValueGroupedDataset.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="217" column="14" lean-forward="false" selection-start-line="217" selection-start-column="14" selection-end-line="217" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/cassandra/CassandraForEachWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/bean/stream/Interaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ConsumerSqlTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="61" column="45" lean-forward="true" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        <state relative-caret-position="560">
+          <caret line="102" column="47" lean-forward="false" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="1589" column="58" lean-forward="false" selection-start-line="1589" selection-start-column="53" selection-end-line="1589" selection-end-column="58" />
+          <folding>
+            <element signature="e#67889#67890#0" expanded="true" />
+            <element signature="e#67953#67954#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/capstone/ConsumerSql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="127" column="0" lean-forward="true" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,9 +1,7 @@
 /Users/simon/capstone/src/main/java/capstone/Starter.java
-/Users/simon/capstone/src/main/java/capstone/ignite/IgniteStarter.java
 /Users/simon/capstone/src/main/java/capstone/bean/stream/Interaction.java
-/Users/simon/capstone/src/main/java/capstone/ignite/IgniteWriter.java
-/Users/simon/capstone/src/main/java/capstone/ignite/IgniteDAO.java
-/Users/simon/capstone/src/main/java/capstone/bean/ignite/InteractionBean.java
+/Users/simon/capstone/src/main/java/capstone/bean/stream/BotBean.java
+/Users/simon/capstone/src/main/java/capstone/PartialCollector.java
 /Users/simon/capstone/src/main/java/capstone/cassandra/CassandraConnector.java
 /Users/simon/capstone/src/main/java/capstone/ConsumerSql.java
-/Users/simon/capstone/src/main/java/capstone/cassandra/CassandraWriter.java
+/Users/simon/capstone/src/main/java/capstone/cassandra/CassandraForEachWriter.java

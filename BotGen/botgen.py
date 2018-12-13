@@ -20,10 +20,10 @@ from datetime import datetime, timedelta
 
 # == generate content ids for bots and users
 # content ids [1000 .. 1020]
-bot_categories = [id for id in range(1000, 1020)]
+bot_categories = list(range(1000, 1020))
 # bot changes content twice as much as an user
 # conten ids [1000, 1000 ..  1010, 1010]
-user_categories = bot_categories[:int(len(bot_categories)/2)]*2
+user_categories = list(range(1000, 1005))*4
 
 # these funtions return random content id for users, bots
 def random_content_user(): return random.choice(user_categories)
@@ -38,7 +38,7 @@ def user2ip(id): return "172.10.{}.{}".format(int(id / 255), id % 255)
 def bot2ip(id): return "172.20.{}.{}".format(int(id / 255), id % 255)
 def asits(dt): return int(dt.timestamp())
 
-def asJson(entry): return { 'unix_time' : asits(entry[0]), 'category_id': entry[1], 'ip' : entry[2], 'interactionType' : entry[3] }
+def asJson(entry): return { 'unix_time' : asits(entry[0]), 'category_id': entry[1], 'ip' : entry[2], 'type' : entry[3] }
 
 def writeAsJson(entry, fd = None):
     if fd:
@@ -71,7 +71,7 @@ def do_generate(fd = None):
     first = True
     for entry in generate_log(args, datetime.now()):
         if not first and fd:
-            fd.write(",\n")
+            fd.write("\n")
         else:
             first = False
         writeAsJson(entry, fd)

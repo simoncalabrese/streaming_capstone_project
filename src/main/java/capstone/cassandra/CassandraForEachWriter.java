@@ -1,11 +1,14 @@
 package capstone.cassandra;
 
+import capstone.bean.stream.BotBean;
 import org.apache.spark.sql.ForeachWriter;
 import org.apache.spark.sql.Row;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class CassandraForEachWriter extends ForeachWriter<Row> {
+import java.util.concurrent.CompletableFuture;
+
+public class CassandraForEachWriter extends ForeachWriter<BotBean> {
     private static final long serialVersionUID = 6593255972516907576L;
     private static final Logger LOGGER = LoggerFactory.getLogger(CassandraForEachWriter.class);
 
@@ -13,6 +16,9 @@ public class CassandraForEachWriter extends ForeachWriter<Row> {
     private static final String RATIO = "ratio";
     private static final String TOT_REQUESTS = "totRequests";
     private static final String TOT_CATEGORIES = "totCategories";
+    private static final String RATIO_AMNT = "ratioAmount";
+    private static final String TOT_REQUESTS_AMNT = "totRequestsAmount";
+    private static final String TOT_CATEGORIES_AMNT = "totCategoriesAmount";
     private static final String REGISTER_DATE = "register_date";
 
     private static final CassandraConnector client = new CassandraConnector();
@@ -28,16 +34,19 @@ public class CassandraForEachWriter extends ForeachWriter<Row> {
     }
 
     @Override
-    public void process(Row value) {
-        final String ip = value.getAs(IP);
-        final Boolean ratio = value.getAs(RATIO);
-        final Boolean totRequests = value.getAs(TOT_REQUESTS);
-        final Boolean totCategories = value.getAs(TOT_CATEGORIES);
+    public void process(BotBean value) {
+        final String ip = value.getIp();
+        final Boolean ratio = value.getRatio();
+        final Boolean totRequests = value.getTotRequests();
+        final Boolean totCategories = value.getTotCategories();
+        final Double ratioAmount = value.getRatioAmount();
+        final Long totRequestsAmount = value.getTotRequestsAmont();
+        final Long totCategoriesAmount = value.getTotCategoriesAmount();
         final Long registerDate = System.currentTimeMillis();
 
         String query = "INSERT INTO " +
-                "capstone.bots" + "(" + IP + "," + RATIO + "," + TOT_REQUESTS + "," + TOT_CATEGORIES + "," + REGISTER_DATE + ") " +
-                "VALUES ('" + ip + "', " + ratio + ", " + totRequests + ", " + totCategories + "," + registerDate + ");";
+                "capstone.bots" + "(" + IP + "," + RATIO + "," + TOT_REQUESTS + "," + TOT_CATEGORIES + "," + REGISTER_DATE + "," + RATIO_AMNT + "," + TOT_REQUESTS_AMNT + "," + TOT_CATEGORIES_AMNT + ") " +
+                "VALUES ('" + ip + "', " + ratio + ", " + totRequests + ", " + totCategories + "," + registerDate + "," + ratioAmount + "," + totRequestsAmount + ", " + totCategoriesAmount + ");";
         LOGGER.info("Performing: " + query);
         client.getSession().execute(query);
     }

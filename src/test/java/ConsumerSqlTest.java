@@ -100,7 +100,7 @@ public class ConsumerSqlTest {
                 .select(unix_timestamp(col("date"), "yyyy-MM-dd HH:mm:ss").cast("timestamp").as(Encoders.LONG()).as("date"), col("categoryId").as(Encoders.LONG()),
                         col("ip").as(Encoders.STRING()), col("interactionType").as(Encoders.LONG()))
                 .as(Encoders.bean(Interaction.class));
-        return ConsumerSql.analyze(test);
+        return ConsumerSql.analyze(test).toDF();
     }
 
 }

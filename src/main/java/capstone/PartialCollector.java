@@ -73,6 +73,7 @@ public class PartialCollector extends UserDefinedAggregateFunction {
     @Override
     public Long evaluate(Row buffer) {
         final String concats = buffer.getString(0);
+        Arrays.stream(concats.split(",")).forEach(System.out::println);
         return Arrays.stream(concats.split(",")).count();
     }
 }

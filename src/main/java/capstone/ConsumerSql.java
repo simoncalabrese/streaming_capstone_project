@@ -1,8 +1,12 @@
 package capstone;
 
+import capstone.bean.stream.BotBean;
 import capstone.bean.stream.Interaction;
 import capstone.cassandra.CassandraForEachWriter;
 import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.api.java.function.MapFunction;
+import org.apache.spark.api.java.function.MapGroupsFunction;
 import org.apache.spark.sql.*;
 import org.apache.spark.sql.streaming.OutputMode;
 import org.apache.spark.sql.streaming.StreamingQuery;
@@ -13,6 +17,15 @@ import org.apache.spark.sql.types.StructType;
 import org.apache.spark.streaming.Durations;
 import org.apache.spark.streaming.StreamingContext;
 import org.apache.spark.streaming.api.java.JavaStreamingContext;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.*;
+import java.util.function.Function;
+
+import java.math.BigDecimal;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 import static org.apache.spark.sql.functions.*;
 
@@ -25,13 +38,20 @@ public class ConsumerSql {
     };
     public final static StructType schema = new StructType(interactionFields);
 
+    private static final SparkConf conf = new SparkConf()
+            .setMaster("local[3]")
+            .setAppName("Capstone");
+    private static final String checkPoint = "Data/checkpoint";
+    private static final SparkSession sparkSession = SparkSession.builder().config(conf)
+            .getOrCreate();
+    private static final Function<Iterator<Interaction>, Stream<Interaction>> TO_STREAM = iter -> {
+        Iterable<Interaction> iterable = () -> iter;
+        return StreamSupport.stream(iterable.spliterator(), false);
+    };
+
+
     public static void main(String[] args) throws InterruptedException {
-        SparkConf conf = new SparkConf()
-                .setMaster("local[*]")
-                .setAppName("Capstone");
-        final String checkPoint = "Data/checkpoint";
-        final SparkSession sparkSession = SparkSession.builder().config(conf)
-                .getOrCreate();
+
 
         final JavaStreamingContext ssc = JavaStreamingContext.getOrCreate(checkPoint, () -> {
             StreamingContext scont = new StreamingContext(sparkSession.sparkContext(), Durations.seconds(30));
@@ -40,7 +60,7 @@ public class ConsumerSql {
                     .readStream()
                     .format("kafka")
                     .option("kafka.bootstrap.servers", "127.0.0.1:9092")
-                    .option("subscribe", "stream-topics")
+                    .option("subscribe", "eventbot")
                     .option("startingOffsets", "latest")
                     .option("failOnDataLoss", "false")
                     //.option("kafkaConsumer.pollTimeoutMs","10")
@@ -54,10 +74,10 @@ public class ConsumerSql {
                     col("interaction.ip").as(Encoders.STRING()),
                     col("interaction.interactionType").as(Encoders.STRING())
             ).as(Encoders.bean(Interaction.class));
-            final Dataset<Row> bots = detect(interaction);
+            final Dataset<BotBean> bots = detect(interaction);
             final StreamingQuery start = bots.coalesce(1)
                     .writeStream()
-                    .outputMode(OutputMode.Complete())
+                    .outputMode(OutputMode.Append())
                     .foreach(new CassandraForEachWriter())
                     .start();
             start.awaitTermination();
@@ -68,62 +88,59 @@ public class ConsumerSql {
         ssc.awaitTermination();
     }
 
-    private static Dataset<Row> detect(final Dataset<Interaction> interaction) {
-        final PartialCollector partialCollector = new PartialCollector();
+    private static Dataset<BotBean> detect(final Dataset<Interaction> interaction) {
         interaction.printSchema();
-        final Column clickCol = count(
-                when(
-                        col("interactionType").equalTo("click"), 0
-                )
-        ).as("totClick");
-        final Column viewCol = count(
-                when(
-                        col("interactionType").equalTo("view"), 0
-                )
-        ).as("totView");
-        final Column ratioAmount = coalesce(clickCol.divide(viewCol), lit(0)).as("ratioAmount");
-        final Column totRequestAmount = count(col("date")).as("totRequestsAmount");
-        final Column ratio = ratioAmount.gt(3).as("ratio");
-        final Column totRequest = count(col("date")).gt(lit(1000)).as("totRequests");
-        final Column totCategoriesAmount = partialCollector.apply(col("categoryId")).as("totCategoriesAmount");
-        final Column totCategories = totCategoriesAmount.gt(lit(5)).as("totCategories");
-        final Dataset<Row> bots = interaction.withWatermark("date", "10 seconds").groupBy(window(col("date"), "10 minutes"), col("ip"))
-                .agg(ratio, totRequest, totCategories, totCategoriesAmount, ratioAmount, totRequestAmount)
-                .filter(col("ip").isNotNull())
-                .where(col("ratio").equalTo(true)
-                        .or(col("totRequests").equalTo(true)
-                                .or(col("totCategories").equalTo(true))));
+        final Dataset<BotBean> bots = interaction
+                .withWatermark("date", "10 minutes")
+                .withColumn("window", window(col("date"), "10 seconds"))
+                .coalesce(1).groupByKey((MapFunction<Row, String>) (row -> row.getAs("ip")), Encoders.STRING())
+                .mapGroups((MapGroupsFunction<String, Row, BotBean>) ConsumerSql::getBotBean, Encoders.bean(BotBean.class)).filter((BotBean botBean) -> botBean.getRatio() || botBean.getTotCategories() || botBean.getTotRequests());
+//        final Dataset<Row> bots = interaction/*.withWatermark("date", "10 minutes").groupBy(window(col("date"), "60 seconds"), col("ip"))*/
+//                .groupBy(col("ip"))
+//                .agg(ratio, totRequest, totCategories, totCategoriesAmount, ratioAmount, totRequestAmount)
+//                .filter(col("ip").isNotNull())
+//                .where(col("ratio").equalTo(true)
+//                        .or(col("totRequests").equalTo(true)
+//                                .or(col("totCategories").equalTo(true))));
         bots.printSchema();
         return bots;
     }
 
-    public static Dataset<Row> analyze(final Dataset<Interaction> interaction) {
-        final PartialCollector partialCollector = new PartialCollector();
-        interaction.printSchema();
-        final Column clickCol = count(
-                when(
-                        col("interactionType").equalTo("click"), 0
-                )
-        ).as("totClick");
-        final Column viewCol = count(
-                when(
-                        col("interactionType").equalTo("view"), 0
-                )
-        ).as("totView");
-        final Column ratioAmount = coalesce(clickCol.divide(viewCol), lit(0)).as("ratioAmount");
-        final Column totRequestAmount = count(col("date")).as("totRequestsAmount");
-        final Column ratio = ratioAmount.gt(3).as("ratio");
-        final Column totRequest = count(col("date")).gt(lit(1000)).as("totRequests");
-        final Column totCategoriesAmount = partialCollector.apply(col("categoryId")).as("totCategoriesAmount");
-        final Column totCategories = totCategoriesAmount.gt(lit(5)).as("totCategories");
-        final Dataset<Row> bots = interaction.groupBy(window(col("date"),"10 minutes"), col("ip"))
-                .agg(ratio, totRequest, totCategories, totCategoriesAmount, ratioAmount, totRequestAmount)
-                .filter(col("ip").isNotNull())
-                .where(col("ratio").equalTo(true)
-                        .or(col("totRequests").equalTo(true)
-                                .or(col("totCategories").equalTo(true))));
-        bots.printSchema();
+    public static Dataset<BotBean> analyze(final Dataset<Interaction> interaction) {
+        final Dataset<BotBean> bots = interaction
+                .withColumn("window", window(col("date"), "10 seconds"))
+                .coalesce(1).groupByKey((MapFunction<Row, String>) (row -> row.getAs("ip")), Encoders.STRING())
+                .mapGroups((MapGroupsFunction<String, Row, BotBean>) (s, iterator) -> getBotBean(s, iterator), Encoders.bean(BotBean.class)).filter((BotBean botBean) -> botBean.getRatio() || botBean.getTotCategories() || botBean.getTotRequests());
         return bots;
+    }
+
+    @NotNull
+    private static BotBean getBotBean(String s, Iterator<Row> iterator) {
+        final List<Row> interactionList = new ArrayList<>();
+        iterator.forEachRemaining(interactionList::add);
+
+        final Long totRequestLong = interactionList.stream().count();
+        final Boolean totRequestBoolean = totRequestLong > 1000L;
+
+        final Long totCategoriesLong = interactionList.stream().map(row -> row.getAs("categoryId")).distinct().count();
+        final Boolean totCategoriesBoolean = totCategoriesLong > 5L;
+
+
+        final Map<String, Long> clickView = interactionList.stream().map(row -> (String) row.getAs("interactionType"))
+                .filter(Objects::nonNull).collect(Collectors.groupingBy(e -> e, Collectors.counting()));
+        final Long click = clickView.getOrDefault("click", 0L);
+        final Long view = clickView.getOrDefault("view", 0L);
+        final Double ratioDouble;
+        final Boolean ratioBoolean;
+        if (view != 0) {
+            ratioDouble = new BigDecimal(click)
+                    .divide(new BigDecimal(view), 2, BigDecimal.ROUND_FLOOR).doubleValue();
+            ratioBoolean = ratioDouble > 3D;
+        } else {
+            ratioDouble = 0D;
+            ratioBoolean = false;
+        }
+        return new BotBean(s, ratioBoolean, totRequestBoolean, totCategoriesBoolean, ratioDouble, totRequestLong, totCategoriesLong);
     }
 
 
